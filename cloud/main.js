@@ -21,7 +21,7 @@ Parse.Cloud.define('newincNumOfFollowers', function(request, response) {
   user.increment("xnumberOfFollowers",+1);
   user.save(null, {useMasterKey: true},{
   	success :function(user) {
-  		response.success(user)
+  		response.success('welldone')
   	},
   	error :function(error) {
   		response.error("Could not increment number of followers, error " + error.code + ":" + error.message);
@@ -39,7 +39,7 @@ Parse.Cloud.define('newdecNumOfFollowers', function(request, response) {
   user.increment("xnumberOfFollowers",-1);
   user.save(null, {useMasterKey: true},{
   	success :function(user) {
-  		response.success(user)
+  		response.success('welldone')
   	},
   	error :function(error) {
   		response.error("Could not decrement number of followers, error " + error.code + ":" + error.message);
