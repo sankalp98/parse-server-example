@@ -33,16 +33,6 @@ Parse.Cloud.define('newincNumOfFollowers', function(request, response) {
   response.error('error occured here');
   }
 });
-  
-  /*user.increment("xnumberOfFollowers",+1);
-  user.save(null, {useMasterKey: true},{
-  	success :function(user) {
-  		response.success('welldone')
-  	},
-  	error :function(error) {
-  		response.error("Could not increment number of followers, error " + error.code + ":" + error.message);
-  	}
-  });*/
 });
 
 Parse.Cloud.define('newdecNumOfFollowers', function(request, response) {
@@ -66,4 +56,5 @@ Parse.Cloud.define('newdecNumOfFollowers', function(request, response) {
   // Set the job's error status
   response.error('error occured here');
   }
-})
+});
+});
