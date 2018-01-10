@@ -66,4 +66,4 @@ Parse.Cloud.define('newdecNumOfFollowers', function(request, response) {
   // Set the job's error status
   response.error('error occured here');
   }
-});
+})
